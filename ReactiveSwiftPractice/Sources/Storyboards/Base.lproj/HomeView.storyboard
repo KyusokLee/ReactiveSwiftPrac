@@ -15,9 +15,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1MV-cb-hti">
+                                <rect key="frame" x="121.66666666666669" y="411" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="53h-rL-HJ8"/>
+                                    <constraint firstAttribute="width" constant="150" id="fiX-Kz-xIE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBU-nY-4Bq">
+                                <rect key="frame" x="146.66666666666666" y="471" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fh2-S8-aOn"/>
+                                    <constraint firstAttribute="width" constant="100" id="ZM7-Za-OrN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YBU-nY-4Bq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5ly-1E-6Zq"/>
+                            <constraint firstItem="1MV-cb-hti" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FHU-K9-qE1"/>
+                            <constraint firstItem="YBU-nY-4Bq" firstAttribute="top" secondItem="1MV-cb-hti" secondAttribute="bottom" constant="30" id="Rak-Uc-LLt"/>
+                            <constraint firstItem="1MV-cb-hti" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d3V-6e-uAJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="practiceButton" destination="YBU-nY-4Bq" id="8Wx-Wz-BEU"/>
+                        <outlet property="practiceTextField" destination="1MV-cb-hti" id="JUc-Ub-42k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

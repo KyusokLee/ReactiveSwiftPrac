@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9486FFAD2BBD6D6C005CC8B5 /* ReactiveCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9486FFAC2BBD6D6C005CC8B5 /* ReactiveCocoa */; };
 		94CE94262BB2C87B00E3881B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE94252BB2C87B00E3881B /* AppDelegate.swift */; };
 		94CE94282BB2C87B00E3881B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE94272BB2C87B00E3881B /* SceneDelegate.swift */; };
 		94CE942A2BB2C87B00E3881B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE94292BB2C87B00E3881B /* HomeViewController.swift */; };
 		94CE942D2BB2C87B00E3881B /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CE942B2BB2C87B00E3881B /* HomeView.storyboard */; };
 		94CE942F2BB2C87D00E3881B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94CE942E2BB2C87D00E3881B /* Assets.xcassets */; };
 		94CE94322BB2C87D00E3881B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CE94302BB2C87D00E3881B /* LaunchScreen.storyboard */; };
+		94CE94422BB2D11400E3881B /* ReactiveSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 94CE94412BB2D11400E3881B /* ReactiveSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94CE94422BB2D11400E3881B /* ReactiveSwift in Frameworks */,
+				9486FFAD2BBD6D6C005CC8B5 /* ReactiveCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +143,10 @@
 			dependencies = (
 			);
 			name = ReactiveSwiftPractice;
+			packageProductDependencies = (
+				94CE94412BB2D11400E3881B /* ReactiveSwift */,
+				9486FFAC2BBD6D6C005CC8B5 /* ReactiveCocoa */,
+			);
 			productName = ReactiveSwiftPractice;
 			productReference = 94CE94222BB2C87B00E3881B /* ReactiveSwiftPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -167,6 +175,10 @@
 				Base,
 			);
 			mainGroup = 94CE94192BB2C87B00E3881B;
+			packageReferences = (
+				94CE94402BB2D11400E3881B /* XCRemoteSwiftPackageReference "ReactiveSwift" */,
+				9486FFAB2BBD6D6C005CC8B5 /* XCRemoteSwiftPackageReference "ReactiveCocoa" */,
+			);
 			productRefGroup = 94CE94232BB2C87B00E3881B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -417,6 +429,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9486FFAB2BBD6D6C005CC8B5 /* XCRemoteSwiftPackageReference "ReactiveCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveCocoa/ReactiveCocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+		94CE94402BB2D11400E3881B /* XCRemoteSwiftPackageReference "ReactiveSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveCocoa/ReactiveSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9486FFAC2BBD6D6C005CC8B5 /* ReactiveCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9486FFAB2BBD6D6C005CC8B5 /* XCRemoteSwiftPackageReference "ReactiveCocoa" */;
+			productName = ReactiveCocoa;
+		};
+		94CE94412BB2D11400E3881B /* ReactiveSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94CE94402BB2D11400E3881B /* XCRemoteSwiftPackageReference "ReactiveSwift" */;
+			productName = ReactiveSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94CE941A2BB2C87B00E3881B /* Project object */;
 }
